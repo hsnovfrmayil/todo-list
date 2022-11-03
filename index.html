@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <!-- Bootstrap link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="././css/style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-3 m-auto">
+          <div class="card mt-3">
+            <div class="card-header bg-warning border-0 p-3"></div>
+            <h4 class="text-center my-2 fw-bold">To-Do List</h4>
+            <form class="p-3 d-flex" id="form">
+              <div
+                class="input_group border border-1 rounded-start d-flex align-items-center w-100"
+              >
+                <input
+                  type="text"
+                  name=""
+                  id="todo_input"
+                  class="w-100 border-0 outline-0"
+                  style="outline: none"
+                />
+                <i class="bi bi-x-circle me-2 "></i>
+              </div>
+              <button class="py-2 px-3">Add</button>
+            </form>
+
+            <ul class="list-group list-group-flush" id="list"></ul>
+            <div class="card-footer d-flex justify-content-end">
+              <button class="mx-1 btn btn-warning">Delete</button>
+              <button class="mx-1 btn btn-danger">Clear All</button>
+              <i
+                class="bi bi-sort-alpha-down py-2 px-3 bg-black bg-opacity-10 rounded-2 fs-5"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="././app/app.js"></script>
+  </body>
+</html>
